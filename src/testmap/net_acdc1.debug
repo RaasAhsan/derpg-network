@@ -1,0 +1,1394 @@
+//DERPG VX MAP DEBUG FILE
+//VERSION: 2
+//DATE CREATED: 2/14/2013
+//A DEBUG FILE THAT HAS EVERYTHING IN A USER READABLE FORMAT.
+//DERPG © 2007-2013
+[DECORATIONS]
+{
+    DESCRIPTION: ALL MAP DETAILS ARE UTILIZED HERE
+    COUNT: 1
+    [DECORATION INSTANCE 1]
+    {
+        X           : 185
+        Y           : 198
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 6
+    }
+}
+[START POINTS]
+{
+    DESCRIPTION: TELLS THE GAME WHERE THE PLAYER WOULD SPAWN. USE WITH END
+    COUNT: 3
+    [START INSTANCE 1]
+    {
+        X            : 320
+        Y            : 232
+        Z            : 0
+        MAP FROM     : net_acdcextra
+        WARPS        : 0
+        DIRECTIONFROM: 3
+    }
+    [START INSTANCE 2]
+    {
+        X            : 252
+        Y            : 538
+        Z            : 0
+        MAP FROM     : net_lanhp
+        WARPS        : 1
+        DIRECTIONFROM: 1
+    }
+    [START INSTANCE 3]
+    {
+        X            : 769
+        Y            : 424
+        Z            : 0
+        MAP FROM     : cw_debug
+        WARPS        : 0
+        DIRECTIONFROM: 5
+    }
+}
+[END POINTS]
+{
+    DESCRIPTION: TAKES THE PLAYER TO ANOTHER MAP. MUST USE WITH START
+    COUNT: 4
+    [END INSTANCE 1]
+    {
+        X          : 288
+        Y          : 216
+        Z          : 0
+        DESTINATION: net_acdcextra
+        WARP       : 0
+    }
+    [END INSTANCE 2]
+    {
+        X          : 704
+        Y          : 256
+        Z          : 0
+        DESTINATION: net_nitro1
+        WARP       : 0
+    }
+    [END INSTANCE 3]
+    {
+        X          : 768
+        Y          : 288
+        Z          : 0
+        DESTINATION: net_scilab_test
+        WARP       : 0
+    }
+    [END INSTANCE 4]
+    {
+        X          : 800
+        Y          : 408
+        Z          : 0
+        DESTINATION: cw_debug
+        WARP       : 0
+    }
+}
+[RESTRICT POINTS]
+{
+    DESCRIPTION: RESTRICTS THE USER FROM PASSING THROUGH
+    COUNT: 191
+    [RESTRICT INSTANCE 1]
+    {
+        X: 352
+        Y: 216
+        Z: 0
+    }
+    [RESTRICT INSTANCE 2]
+    {
+        X: 656
+        Y: 232
+        Z: 0
+    }
+    [RESTRICT INSTANCE 3]
+    {
+        X: 600
+        Y: 232
+        Z: 0
+    }
+    [RESTRICT INSTANCE 4]
+    {
+        X: 384
+        Y: 232
+        Z: 0
+    }
+    [RESTRICT INSTANCE 5]
+    {
+        X: 392
+        Y: 236
+        Z: 0
+    }
+    [RESTRICT INSTANCE 6]
+    {
+        X: 672
+        Y: 240
+        Z: 0
+    }
+    [RESTRICT INSTANCE 7]
+    {
+        X: 288
+        Y: 248
+        Z: 0
+    }
+    [RESTRICT INSTANCE 8]
+    {
+        X: 568
+        Y: 248
+        Z: 0
+    }
+    [RESTRICT INSTANCE 9]
+    {
+        X: 424
+        Y: 252
+        Z: 0
+    }
+    [RESTRICT INSTANCE 10]
+    {
+        X: 320
+        Y: 264
+        Z: 0
+    }
+    [RESTRICT INSTANCE 11]
+    {
+        X: 536
+        Y: 264
+        Z: 0
+    }
+    [RESTRICT INSTANCE 12]
+    {
+        X: 456
+        Y: 268
+        Z: 0
+    }
+    [RESTRICT INSTANCE 13]
+    {
+        X: 736
+        Y: 272
+        Z: 0
+    }
+    [RESTRICT INSTANCE 14]
+    {
+        X: 352
+        Y: 280
+        Z: 0
+    }
+    [RESTRICT INSTANCE 15]
+    {
+        X: 504
+        Y: 280
+        Z: 0
+    }
+    [RESTRICT INSTANCE 16]
+    {
+        X: 488
+        Y: 284
+        Z: 0
+    }
+    [RESTRICT INSTANCE 17]
+    {
+        X: 492
+        Y: 286
+        Z: 0
+    }
+    [RESTRICT INSTANCE 18]
+    {
+        X: 384
+        Y: 296
+        Z: 0
+    }
+    [RESTRICT INSTANCE 19]
+    {
+        X: 800
+        Y: 304
+        Z: 0
+    }
+    [RESTRICT INSTANCE 20]
+    {
+        X: 416
+        Y: 312
+        Z: 0
+    }
+    [RESTRICT INSTANCE 21]
+    {
+        X: 432
+        Y: 320
+        Z: 0
+    }
+    [RESTRICT INSTANCE 22]
+    {
+        X: 832
+        Y: 320
+        Z: 0
+    }
+    [RESTRICT INSTANCE 23]
+    {
+        X: 400
+        Y: 336
+        Z: 0
+    }
+    [RESTRICT INSTANCE 24]
+    {
+        X: 368
+        Y: 352
+        Z: 0
+    }
+    [RESTRICT INSTANCE 25]
+    {
+        X: 832
+        Y: 352
+        Z: 0
+    }
+    [RESTRICT INSTANCE 26]
+    {
+        X: 824
+        Y: 356
+        Z: 0
+    }
+    [RESTRICT INSTANCE 27]
+    {
+        X: 336
+        Y: 368
+        Z: 0
+    }
+    [RESTRICT INSTANCE 28]
+    {
+        X: 792
+        Y: 372
+        Z: 0
+    }
+    [RESTRICT INSTANCE 29]
+    {
+        X: 304
+        Y: 384
+        Z: 0
+    }
+    [RESTRICT INSTANCE 30]
+    {
+        X: 760
+        Y: 388
+        Z: 0
+    }
+    [RESTRICT INSTANCE 31]
+    {
+        X: 768
+        Y: 392
+        Z: 0
+    }
+    [RESTRICT INSTANCE 32]
+    {
+        X: 272
+        Y: 400
+        Z: 0
+    }
+    [RESTRICT INSTANCE 33]
+    {
+        X: 240
+        Y: 416
+        Z: 0
+    }
+    [RESTRICT INSTANCE 34]
+    {
+        X: 696
+        Y: 416
+        Z: 0
+    }
+    [RESTRICT INSTANCE 35]
+    {
+        X: 680
+        Y: 424
+        Z: 0
+    }
+    [RESTRICT INSTANCE 36]
+    {
+        X: 832
+        Y: 424
+        Z: 0
+    }
+    [RESTRICT INSTANCE 37]
+    {
+        X: 888
+        Y: 428
+        Z: 0
+    }
+    [RESTRICT INSTANCE 38]
+    {
+        X: 208
+        Y: 432
+        Z: 0
+    }
+    [RESTRICT INSTANCE 39]
+    {
+        X: 728
+        Y: 432
+        Z: 0
+    }
+    [RESTRICT INSTANCE 40]
+    {
+        X: 928
+        Y: 436
+        Z: 0
+    }
+    [RESTRICT INSTANCE 41]
+    {
+        X: 648
+        Y: 440
+        Z: 0
+    }
+    [RESTRICT INSTANCE 42]
+    {
+        X: 864
+        Y: 440
+        Z: 0
+    }
+    [RESTRICT INSTANCE 43]
+    {
+        X: 936
+        Y: 440
+        Z: 0
+    }
+    [RESTRICT INSTANCE 44]
+    {
+        X: 760
+        Y: 448
+        Z: 0
+    }
+    [RESTRICT INSTANCE 45]
+    {
+        X: 224
+        Y: 456
+        Z: 0
+    }
+    [RESTRICT INSTANCE 46]
+    {
+        X: 616
+        Y: 456
+        Z: 0
+    }
+    [RESTRICT INSTANCE 47]
+    {
+        X: 968
+        Y: 456
+        Z: 0
+    }
+    [RESTRICT INSTANCE 48]
+    {
+        X: 792
+        Y: 464
+        Z: 0
+    }
+    [RESTRICT INSTANCE 49]
+    {
+        X: 588
+        Y: 470
+        Z: 0
+    }
+    [RESTRICT INSTANCE 50]
+    {
+        X: 804
+        Y: 470
+        Z: 0
+    }
+    [RESTRICT INSTANCE 51]
+    {
+        X: 256
+        Y: 472
+        Z: 0
+    }
+    [RESTRICT INSTANCE 52]
+    {
+        X: 592
+        Y: 472
+        Z: 0
+    }
+    [RESTRICT INSTANCE 53]
+    {
+        X: 1000
+        Y: 472
+        Z: 0
+    }
+    [RESTRICT INSTANCE 54]
+    {
+        X: 600
+        Y: 476
+        Z: 0
+    }
+    [RESTRICT INSTANCE 55]
+    {
+        X: 1344
+        Y: 476
+        Z: 140
+    }
+    [RESTRICT INSTANCE 56]
+    {
+        X: 1408
+        Y: 476
+        Z: 140
+    }
+    [RESTRICT INSTANCE 57]
+    {
+        X: 288
+        Y: 488
+        Z: 0
+    }
+    [RESTRICT INSTANCE 58]
+    {
+        X: 632
+        Y: 492
+        Z: 0
+    }
+    [RESTRICT INSTANCE 59]
+    {
+        X: 1312
+        Y: 492
+        Z: 140
+    }
+    [RESTRICT INSTANCE 60]
+    {
+        X: 1440
+        Y: 492
+        Z: 140
+    }
+    [RESTRICT INSTANCE 61]
+    {
+        X: 1000
+        Y: 500
+        Z: 0
+    }
+    [RESTRICT INSTANCE 62]
+    {
+        X: 256
+        Y: 504
+        Z: 0
+    }
+    [RESTRICT INSTANCE 63]
+    {
+        X: 528
+        Y: 504
+        Z: 0
+    }
+    [RESTRICT INSTANCE 64]
+    {
+        X: 800
+        Y: 504
+        Z: 0
+    }
+    [RESTRICT INSTANCE 65]
+    {
+        X: 1000
+        Y: 504
+        Z: 0
+    }
+    [RESTRICT INSTANCE 66]
+    {
+        X: 992
+        Y: 504
+        Z: 0
+    }
+    [RESTRICT INSTANCE 67]
+    {
+        X: 664
+        Y: 508
+        Z: 0
+    }
+    [RESTRICT INSTANCE 68]
+    {
+        X: 1280
+        Y: 508
+        Z: 140
+    }
+    [RESTRICT INSTANCE 69]
+    {
+        X: 1472
+        Y: 508
+        Z: 140
+    }
+    [RESTRICT INSTANCE 70]
+    {
+        X: 512
+        Y: 512
+        Z: 0
+    }
+    [RESTRICT INSTANCE 71]
+    {
+        X: 1016
+        Y: 516
+        Z: 0
+    }
+    [RESTRICT INSTANCE 72]
+    {
+        X: 224
+        Y: 520
+        Z: 0
+    }
+    [RESTRICT INSTANCE 73]
+    {
+        X: 352
+        Y: 520
+        Z: 0
+    }
+    [RESTRICT INSTANCE 74]
+    {
+        X: 560
+        Y: 520
+        Z: 0
+    }
+    [RESTRICT INSTANCE 75]
+    {
+        X: 768
+        Y: 520
+        Z: 0
+    }
+    [RESTRICT INSTANCE 76]
+    {
+        X: 1032
+        Y: 520
+        Z: 0
+    }
+    [RESTRICT INSTANCE 77]
+    {
+        X: 696
+        Y: 524
+        Z: 0
+    }
+    [RESTRICT INSTANCE 78]
+    {
+        X: 760
+        Y: 524
+        Z: 0
+    }
+    [RESTRICT INSTANCE 79]
+    {
+        X: 1504
+        Y: 524
+        Z: 140
+    }
+    [RESTRICT INSTANCE 80]
+    {
+        X: 336
+        Y: 528
+        Z: 0
+    }
+    [RESTRICT INSTANCE 81]
+    {
+        X: 480
+        Y: 528
+        Z: 0
+    }
+    [RESTRICT INSTANCE 82]
+    {
+        X: 1040
+        Y: 528
+        Z: 0
+    }
+    [RESTRICT INSTANCE 83]
+    {
+        X: 192
+        Y: 536
+        Z: 0
+    }
+    [RESTRICT INSTANCE 84]
+    {
+        X: 384
+        Y: 536
+        Z: 0
+    }
+    [RESTRICT INSTANCE 85]
+    {
+        X: 592
+        Y: 536
+        Z: 0
+    }
+    [RESTRICT INSTANCE 86]
+    {
+        X: 864
+        Y: 536
+        Z: 0
+    }
+    [RESTRICT INSTANCE 87]
+    {
+        X: 928
+        Y: 536
+        Z: 0
+    }
+    [RESTRICT INSTANCE 88]
+    {
+        X: 1280
+        Y: 540
+        Z: 140
+    }
+    [RESTRICT INSTANCE 89]
+    {
+        X: 1536
+        Y: 540
+        Z: 140
+    }
+    [RESTRICT INSTANCE 90]
+    {
+        X: 304
+        Y: 544
+        Z: 0
+    }
+    [RESTRICT INSTANCE 91]
+    {
+        X: 400
+        Y: 544
+        Z: 0
+    }
+    [RESTRICT INSTANCE 92]
+    {
+        X: 448
+        Y: 544
+        Z: 0
+    }
+    [RESTRICT INSTANCE 93]
+    {
+        X: 1072
+        Y: 544
+        Z: 0
+    }
+    [RESTRICT INSTANCE 94]
+    {
+        X: 160
+        Y: 552
+        Z: 0
+    }
+    [RESTRICT INSTANCE 95]
+    {
+        X: 624
+        Y: 552
+        Z: 0
+    }
+    [RESTRICT INSTANCE 96]
+    {
+        X: 832
+        Y: 552
+        Z: 0
+    }
+    [RESTRICT INSTANCE 97]
+    {
+        X: 960
+        Y: 552
+        Z: 0
+    }
+    [RESTRICT INSTANCE 98]
+    {
+        X: 632
+        Y: 556
+        Z: 0
+    }
+    [RESTRICT INSTANCE 99]
+    {
+        X: 824
+        Y: 556
+        Z: 0
+    }
+    [RESTRICT INSTANCE 100]
+    {
+        X: 1568
+        Y: 556
+        Z: 140
+    }
+    [RESTRICT INSTANCE 101]
+    {
+        X: 160
+        Y: 560
+        Z: 0
+    }
+    [RESTRICT INSTANCE 102]
+    {
+        X: 272
+        Y: 560
+        Z: 0
+    }
+    [RESTRICT INSTANCE 103]
+    {
+        X: 1104
+        Y: 560
+        Z: 0
+    }
+    [RESTRICT INSTANCE 104]
+    {
+        X: 992
+        Y: 568
+        Z: 0
+    }
+    [RESTRICT INSTANCE 105]
+    {
+        X: 600
+        Y: 572
+        Z: 0
+    }
+    [RESTRICT INSTANCE 106]
+    {
+        X: 856
+        Y: 572
+        Z: 0
+    }
+    [RESTRICT INSTANCE 107]
+    {
+        X: 1600
+        Y: 572
+        Z: 140
+    }
+    [RESTRICT INSTANCE 108]
+    {
+        X: 1344
+        Y: 572
+        Z: 140
+    }
+    [RESTRICT INSTANCE 109]
+    {
+        X: 192
+        Y: 576
+        Z: 0
+    }
+    [RESTRICT INSTANCE 110]
+    {
+        X: 240
+        Y: 576
+        Z: 0
+    }
+    [RESTRICT INSTANCE 111]
+    {
+        X: 1136
+        Y: 576
+        Z: 0
+    }
+    [RESTRICT INSTANCE 112]
+    {
+        X: 1024
+        Y: 584
+        Z: 0
+    }
+    [RESTRICT INSTANCE 113]
+    {
+        X: 568
+        Y: 588
+        Z: 0
+    }
+    [RESTRICT INSTANCE 114]
+    {
+        X: 888
+        Y: 588
+        Z: 0
+    }
+    [RESTRICT INSTANCE 115]
+    {
+        X: 1632
+        Y: 588
+        Z: 140
+    }
+    [RESTRICT INSTANCE 116]
+    {
+        X: 1376
+        Y: 588
+        Z: 140
+    }
+    [RESTRICT INSTANCE 117]
+    {
+        X: 1168
+        Y: 592
+        Z: 0
+    }
+    [RESTRICT INSTANCE 118]
+    {
+        X: 1232
+        Y: 592
+        Z: 0
+    }
+    [RESTRICT INSTANCE 119]
+    {
+        X: 1240
+        Y: 596
+        Z: 0
+    }
+    [RESTRICT INSTANCE 120]
+    {
+        X: 1056
+        Y: 600
+        Z: 0
+    }
+    [RESTRICT INSTANCE 121]
+    {
+        X: 536
+        Y: 604
+        Z: 0
+    }
+    [RESTRICT INSTANCE 122]
+    {
+        X: 920
+        Y: 604
+        Z: 0
+    }
+    [RESTRICT INSTANCE 123]
+    {
+        X: 1664
+        Y: 604
+        Z: 140
+    }
+    [RESTRICT INSTANCE 124]
+    {
+        X: 1408
+        Y: 604
+        Z: 140
+    }
+    [RESTRICT INSTANCE 125]
+    {
+        X: 1088
+        Y: 616
+        Z: 0
+    }
+    [RESTRICT INSTANCE 126]
+    {
+        X: 504
+        Y: 620
+        Z: 0
+    }
+    [RESTRICT INSTANCE 127]
+    {
+        X: 952
+        Y: 620
+        Z: 0
+    }
+    [RESTRICT INSTANCE 128]
+    {
+        X: 1440
+        Y: 620
+        Z: 140
+    }
+    [RESTRICT INSTANCE 129]
+    {
+        X: 1696
+        Y: 620
+        Z: 140
+    }
+    [RESTRICT INSTANCE 130]
+    {
+        X: 1104
+        Y: 624
+        Z: 0
+    }
+    [RESTRICT INSTANCE 131]
+    {
+        X: 1304
+        Y: 624
+        Z: 0
+    }
+    [RESTRICT INSTANCE 132]
+    {
+        X: 1472
+        Y: 636
+        Z: 140
+    }
+    [RESTRICT INSTANCE 133]
+    {
+        X: 528
+        Y: 640
+        Z: 0
+    }
+    [RESTRICT INSTANCE 134]
+    {
+        X: 928
+        Y: 640
+        Z: 0
+    }
+    [RESTRICT INSTANCE 135]
+    {
+        X: 1680
+        Y: 640
+        Z: 140
+    }
+    [RESTRICT INSTANCE 136]
+    {
+        X: 1676
+        Y: 642
+        Z: 140
+    }
+    [RESTRICT INSTANCE 137]
+    {
+        X: 1680
+        Y: 644
+        Z: 140
+    }
+    [RESTRICT INSTANCE 138]
+    {
+        X: 1504
+        Y: 652
+        Z: 140
+    }
+    [RESTRICT INSTANCE 139]
+    {
+        X: 1100
+        Y: 654
+        Z: 0
+    }
+    [RESTRICT INSTANCE 140]
+    {
+        X: 560
+        Y: 656
+        Z: 0
+    }
+    [RESTRICT INSTANCE 141]
+    {
+        X: 896
+        Y: 656
+        Z: 0
+    }
+    [RESTRICT INSTANCE 142]
+    {
+        X: 1108
+        Y: 658
+        Z: 0
+    }
+    [RESTRICT INSTANCE 143]
+    {
+        X: 1304
+        Y: 660
+        Z: 0
+    }
+    [RESTRICT INSTANCE 144]
+    {
+        X: 1712
+        Y: 660
+        Z: 140
+    }
+    [RESTRICT INSTANCE 145]
+    {
+        X: 1312
+        Y: 664
+        Z: 0
+    }
+    [RESTRICT INSTANCE 146]
+    {
+        X: 1536
+        Y: 668
+        Z: 140
+    }
+    [RESTRICT INSTANCE 147]
+    {
+        X: 592
+        Y: 672
+        Z: 0
+    }
+    [RESTRICT INSTANCE 148]
+    {
+        X: 864
+        Y: 672
+        Z: 0
+    }
+    [RESTRICT INSTANCE 149]
+    {
+        X: 1076
+        Y: 672
+        Z: 0
+    }
+    [RESTRICT INSTANCE 150]
+    {
+        X: 1616
+        Y: 672
+        Z: 140
+    }
+    [RESTRICT INSTANCE 151]
+    {
+        X: 1608
+        Y: 676
+        Z: 140
+    }
+    [RESTRICT INSTANCE 152]
+    {
+        X: 1744
+        Y: 676
+        Z: 140
+    }
+    [RESTRICT INSTANCE 153]
+    {
+        X: 1344
+        Y: 680
+        Z: 0
+    }
+    [RESTRICT INSTANCE 154]
+    {
+        X: 1568
+        Y: 684
+        Z: 140
+    }
+    [RESTRICT INSTANCE 155]
+    {
+        X: 624
+        Y: 688
+        Z: 0
+    }
+    [RESTRICT INSTANCE 156]
+    {
+        X: 832
+        Y: 688
+        Z: 0
+    }
+    [RESTRICT INSTANCE 157]
+    {
+        X: 1044
+        Y: 688
+        Z: 0
+    }
+    [RESTRICT INSTANCE 158]
+    {
+        X: 1240
+        Y: 688
+        Z: 0
+    }
+    [RESTRICT INSTANCE 159]
+    {
+        X: 1648
+        Y: 688
+        Z: 140
+    }
+    [RESTRICT INSTANCE 160]
+    {
+        X: 1172
+        Y: 690
+        Z: 0
+    }
+    [RESTRICT INSTANCE 161]
+    {
+        X: 1776
+        Y: 692
+        Z: 140
+    }
+    [RESTRICT INSTANCE 162]
+    {
+        X: 1376
+        Y: 696
+        Z: 0
+    }
+    [RESTRICT INSTANCE 163]
+    {
+        X: 800
+        Y: 704
+        Z: 0
+    }
+    [RESTRICT INSTANCE 164]
+    {
+        X: 656
+        Y: 704
+        Z: 0
+    }
+    [RESTRICT INSTANCE 165]
+    {
+        X: 1012
+        Y: 704
+        Z: 0
+    }
+    [RESTRICT INSTANCE 166]
+    {
+        X: 1144
+        Y: 704
+        Z: 0
+    }
+    [RESTRICT INSTANCE 167]
+    {
+        X: 1208
+        Y: 704
+        Z: 0
+    }
+    [RESTRICT INSTANCE 168]
+    {
+        X: 1272
+        Y: 704
+        Z: 0
+    }
+    [RESTRICT INSTANCE 169]
+    {
+        X: 1680
+        Y: 704
+        Z: 140
+    }
+    [RESTRICT INSTANCE 170]
+    {
+        X: 672
+        Y: 712
+        Z: 0
+    }
+    [RESTRICT INSTANCE 171]
+    {
+        X: 1408
+        Y: 712
+        Z: 0
+    }
+    [RESTRICT INSTANCE 172]
+    {
+        X: 1116
+        Y: 718
+        Z: 0
+    }
+    [RESTRICT INSTANCE 173]
+    {
+        X: 768
+        Y: 720
+        Z: 0
+    }
+    [RESTRICT INSTANCE 174]
+    {
+        X: 980
+        Y: 720
+        Z: 0
+    }
+    [RESTRICT INSTANCE 175]
+    {
+        X: 1304
+        Y: 720
+        Z: 0
+    }
+    [RESTRICT INSTANCE 176]
+    {
+        X: 1712
+        Y: 720
+        Z: 140
+    }
+    [RESTRICT INSTANCE 177]
+    {
+        X: 696
+        Y: 724
+        Z: 0
+    }
+    [RESTRICT INSTANCE 178]
+    {
+        X: 1720
+        Y: 724
+        Z: 140
+    }
+    [RESTRICT INSTANCE 179]
+    {
+        X: 1088
+        Y: 732
+        Z: 0
+    }
+    [RESTRICT INSTANCE 180]
+    {
+        X: 736
+        Y: 736
+        Z: 0
+    }
+    [RESTRICT INSTANCE 181]
+    {
+        X: 948
+        Y: 736
+        Z: 0
+    }
+    [RESTRICT INSTANCE 182]
+    {
+        X: 1336
+        Y: 736
+        Z: 0
+    }
+    [RESTRICT INSTANCE 183]
+    {
+        X: 1344
+        Y: 740
+        Z: 0
+    }
+    [RESTRICT INSTANCE 184]
+    {
+        X: 1408
+        Y: 740
+        Z: 0
+    }
+    [RESTRICT INSTANCE 185]
+    {
+        X: 1056
+        Y: 748
+        Z: 0
+    }
+    [RESTRICT INSTANCE 186]
+    {
+        X: 920
+        Y: 750
+        Z: 0
+    }
+    [RESTRICT INSTANCE 187]
+    {
+        X: 896
+        Y: 762
+        Z: 0
+    }
+    [RESTRICT INSTANCE 188]
+    {
+        X: 1024
+        Y: 764
+        Z: 0
+    }
+    [RESTRICT INSTANCE 189]
+    {
+        X: 996
+        Y: 778
+        Z: 0
+    }
+    [RESTRICT INSTANCE 190]
+    {
+        X: 972
+        Y: 790
+        Z: 0
+    }
+    [RESTRICT INSTANCE 191]
+    {
+        X: 956
+        Y: 798
+        Z: 0
+    }
+}
+[BATTLE DATA]
+{
+    DESCRIPTION: HOLDS DATA FOR VIRUS BATTLES IN THIS MAP
+    NUMBER OF POSSIBLE BATTLES: 8
+    DATA FOR BATTLE 0
+    {
+          MAP
+        [ ][ ][ ]|[ ][1][ ]
+        [ ][M][ ]|[ ][ ][ ]
+        [ ][ ][ ]|[ ][2][ ]
+
+          DIAGNOSTICS
+        M = Player
+        1 = LasrCann
+        2 = LasrCann
+        3 = Mettaur
+        4 = Mettaur
+    }
+    DATA FOR BATTLE 1
+    {
+          MAP
+        [ ][ ][ ]|[ ][ ][ ]
+        [ ][M][ ]|[ ][1][ ]
+        [ ][ ][ ]|[ ][ ][ ]
+
+          DIAGNOSTICS
+        M = Player
+        1 = BreakMan
+        2 = Mettaur
+        3 = Mettaur
+        4 = Mettaur
+    }
+    DATA FOR BATTLE 2
+    {
+          MAP
+        [ ][ ][ ]|[ ][ ][ ]
+        [ ][M][ ]|[ ][1][ ]
+        [ ][ ][ ]|[ ][ ][ ]
+
+          DIAGNOSTICS
+        M = Player
+        1 = Axl
+        2 = Mettaur
+        3 = Mettaur
+        4 = Mettaur
+    }
+    DATA FOR BATTLE 3
+    {
+          MAP
+        [ ][ ][ ]|[1][ ][ ]
+        [ ][M][ ]|[ ][2][ ]
+        [ ][ ][ ]|[ ][ ][3]
+
+          DIAGNOSTICS
+        M = Player
+        1 = Axl
+        2 = Buzzkill
+        3 = Axl
+        4 = Mettaur
+    }
+}
+[TRIGGER POINTS]
+{
+    DESCRIPTION: TRIGGERS VARIOUS GML CODE WHEN TOUCHED
+    COUNT: 0
+}
+[RAMP POINTS]
+{
+    DESCRIPTION: CREATES RAMPS THAT ALLOW A USER TO INCREASE IN Z AXIS
+    COUNT: 1
+    [RAMP INSTANCE 1]
+    {
+        X     : 1272
+        Y     : 608
+        Z     : 0
+        Z2    : 140
+        DIR   : 0
+        LENGTH: 0.50
+    }
+}
+[JACKER POINTS]
+{
+    DESCRIPTION: PLACES YOUR OPERATOR CAN JACK INTO (Real World only)
+    COUNT: 0
+}
+[MAP SETTINGS]
+{
+    BACKGROUND TYPE  : 1
+    BACKGROUND TEXID : 0
+    BACKGROUND SPEED : 25
+    BACKGROUND XSPEED: 0
+    BACKGROUND YSPEED: -50
+    BACKGROUND RED   : 0
+    BACKGROUND GREEN : 0
+    BACKGROUND BLUE  : 0
+    MAP NAME         : 
+}
+[QUARTU POINTS]
+{
+    DESCRIPTION: BASICALLY RESTRICT INSTANCE... ONLY USING HALF
+    COUNT: 0
+}
+[MYSTERY DATA]
+{
+    DESCRIPTION: LOCATIONS FOR MYSTERY DATA TO SPAWN UP IN A MAP
+    COUNT: 0
+}
+[MD PRIZE DATA]
+{
+    DESCRIPTION: DATA ON PRIZES IN THE MAP OBTAINED VIA MYSTERY DATA
+    [PRIZE 0]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 1]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 2]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 3]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 4]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 5]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 6]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+    [PRIZE 7]
+    {
+        TYPE  : ZENNY
+        AMOUNT: 0
+    }
+}
+[BILLBOARD OBJECTS]
+{
+    DESCRIPTION: OBJECTS THAT WILL ALWAYS APPEAR ON THE MAP
+    COUNT: 0
+}

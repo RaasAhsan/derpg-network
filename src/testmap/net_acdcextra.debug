@@ -1,0 +1,669 @@
+//DERPG VX MAP DEBUG FILE
+//VERSION: 2
+//DATE CREATED: 2/23/2013
+//A DEBUG FILE THAT HAS EVERYTHING IN A USER READABLE FORMAT.
+//DERPG © 2007-2013
+[DECORATIONS]
+{
+    DESCRIPTION: ALL MAP DETAILS ARE UTILIZED HERE
+    COUNT: 29
+    [DECORATION INSTANCE 1]
+    {
+        X           : 864
+        Y           : 456
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 32
+    }
+    [DECORATION INSTANCE 2]
+    {
+        X           : 896
+        Y           : 472
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 32
+    }
+    [DECORATION INSTANCE 3]
+    {
+        X           : 864
+        Y           : 488
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 32
+    }
+    [DECORATION INSTANCE 4]
+    {
+        X           : 928
+        Y           : 488
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 32
+    }
+    [DECORATION INSTANCE 5]
+    {
+        X           : 832
+        Y           : 504
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 32
+    }
+    [DECORATION INSTANCE 6]
+    {
+        X           : 960
+        Y           : 504
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 57
+    }
+    [DECORATION INSTANCE 7]
+    {
+        X           : 896
+        Y           : 568
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 8]
+    {
+        X           : 1024
+        Y           : 568
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 9]
+    {
+        X           : 928
+        Y           : 584
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 10]
+    {
+        X           : 1056
+        Y           : 584
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 11]
+    {
+        X           : 960
+        Y           : 600
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 57
+    }
+    [DECORATION INSTANCE 12]
+    {
+        X           : 1088
+        Y           : 600
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 13]
+    {
+        X           : 1120
+        Y           : 616
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 14]
+    {
+        X           : 1152
+        Y           : 632
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 15]
+    {
+        X           : 1184
+        Y           : 648
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 16]
+    {
+        X           : 1024
+        Y           : 664
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 17]
+    {
+        X           : 1088
+        Y           : 664
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 32
+    }
+    [DECORATION INSTANCE 18]
+    {
+        X           : 1056
+        Y           : 680
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 19]
+    {
+        X           : 1088
+        Y           : 696
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 20]
+    {
+        X           : 1083
+        Y           : 696
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 30
+    }
+    [DECORATION INSTANCE 21]
+    {
+        X           : 1217
+        Y           : 761
+        Z           : 0
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 22]
+    {
+        X           : 698
+        Y           : 499
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 30
+    }
+    [DECORATION INSTANCE 23]
+    {
+        X           : 704
+        Y           : 568
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 24]
+    {
+        X           : 832
+        Y           : 568
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 25]
+    {
+        X           : 672
+        Y           : 584
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 26]
+    {
+        X           : 864
+        Y           : 584
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 27]
+    {
+        X           : 640
+        Y           : 600
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 28]
+    {
+        X           : 608
+        Y           : 616
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+    [DECORATION INSTANCE 29]
+    {
+        X           : 576
+        Y           : 632
+        Z           : 128
+        DEPTHZ      : 0
+        SPRITENUMBER: 31
+    }
+}
+[START POINTS]
+{
+    DESCRIPTION: TELLS THE GAME WHERE THE PLAYER WOULD SPAWN. USE WITH END
+    COUNT: 2
+    [START INSTANCE 1]
+    {
+        X            : 1216
+        Y            : 760
+        Z            : 0
+        MAP FROM     : net_acdc1
+        WARPS        : 0
+        DIRECTIONFROM: 7
+    }
+    [START INSTANCE 2]
+    {
+        X            : 640
+        Y            : 632
+        Z            : 128
+        MAP FROM     : net_lanhp
+        WARPS        : 0
+        DIRECTIONFROM: 1
+    }
+}
+[END POINTS]
+{
+    DESCRIPTION: TAKES THE PLAYER TO ANOTHER MAP. MUST USE WITH START
+    COUNT: 2
+    [END INSTANCE 1]
+    {
+        X          : 1248
+        Y          : 776
+        Z          : 0
+        DESTINATION: net_acdc1
+        WARP       : 0
+    }
+    [END INSTANCE 2]
+    {
+        X          : 608
+        Y          : 648
+        Z          : 128
+        DESTINATION: net_lanhp
+        WARP       : 0
+    }
+}
+[RESTRICT POINTS]
+{
+    DESCRIPTION: RESTRICTS THE USER FROM PASSING THROUGH
+    COUNT: 55
+    [RESTRICT INSTANCE 1]
+    {
+        X: 1088
+        Y: 568
+        Z: 0
+    }
+    [RESTRICT INSTANCE 2]
+    {
+        X: 1120
+        Y: 584
+        Z: 0
+    }
+    [RESTRICT INSTANCE 3]
+    {
+        X: 1152
+        Y: 600
+        Z: 0
+    }
+    [RESTRICT INSTANCE 4]
+    {
+        X: 1024
+        Y: 600
+        Z: 0
+    }
+    [RESTRICT INSTANCE 5]
+    {
+        X: 1184
+        Y: 616
+        Z: 0
+    }
+    [RESTRICT INSTANCE 6]
+    {
+        X: 1056
+        Y: 616
+        Z: 0
+    }
+    [RESTRICT INSTANCE 7]
+    {
+        X: 1216
+        Y: 632
+        Z: 0
+    }
+    [RESTRICT INSTANCE 8]
+    {
+        X: 1088
+        Y: 632
+        Z: 0
+    }
+    [RESTRICT INSTANCE 9]
+    {
+        X: 1248
+        Y: 648
+        Z: 0
+    }
+    [RESTRICT INSTANCE 10]
+    {
+        X: 1120
+        Y: 648
+        Z: 0
+    }
+    [RESTRICT INSTANCE 11]
+    {
+        X: 1088
+        Y: 664
+        Z: 0
+    }
+    [RESTRICT INSTANCE 12]
+    {
+        X: 1152
+        Y: 664
+        Z: 0
+    }
+    [RESTRICT INSTANCE 13]
+    {
+        X: 1184
+        Y: 680
+        Z: 0
+    }
+    [RESTRICT INSTANCE 14]
+    {
+        X: 1248
+        Y: 680
+        Z: 0
+    }
+    [RESTRICT INSTANCE 15]
+    {
+        X: 1024
+        Y: 696
+        Z: 0
+    }
+    [RESTRICT INSTANCE 16]
+    {
+        X: 1152
+        Y: 696
+        Z: 0
+    }
+    [RESTRICT INSTANCE 17]
+    {
+        X: 1216
+        Y: 696
+        Z: 0
+    }
+    [RESTRICT INSTANCE 18]
+    {
+        X: 1056
+        Y: 712
+        Z: 0
+    }
+    [RESTRICT INSTANCE 19]
+    {
+        X: 1248
+        Y: 712
+        Z: 0
+    }
+    [RESTRICT INSTANCE 20]
+    {
+        X: 1088
+        Y: 728
+        Z: 0
+    }
+    [RESTRICT INSTANCE 21]
+    {
+        X: 1280
+        Y: 728
+        Z: 0
+    }
+    [RESTRICT INSTANCE 22]
+    {
+        X: 1280
+        Y: 760
+        Z: 0
+    }
+    [RESTRICT INSTANCE 23]
+    {
+        X: 1088
+        Y: 760
+        Z: 0
+    }
+    [RESTRICT INSTANCE 24]
+    {
+        X: 1120
+        Y: 776
+        Z: 0
+    }
+    [RESTRICT INSTANCE 25]
+    {
+        X: 1216
+        Y: 792
+        Z: 0
+    }
+    [RESTRICT INSTANCE 26]
+    {
+        X: 1280
+        Y: 792
+        Z: 0
+    }
+    [RESTRICT INSTANCE 27]
+    {
+        X: 1152
+        Y: 792
+        Z: 0
+    }
+    [RESTRICT INSTANCE 28]
+    {
+        X: 928
+        Y: 456
+        Z: 128
+    }
+    [RESTRICT INSTANCE 29]
+    {
+        X: 864
+        Y: 456
+        Z: 128
+    }
+    [RESTRICT INSTANCE 30]
+    {
+        X: 960
+        Y: 472
+        Z: 128
+    }
+    [RESTRICT INSTANCE 31]
+    {
+        X: 992
+        Y: 488
+        Z: 128
+    }
+    [RESTRICT INSTANCE 32]
+    {
+        X: 864
+        Y: 488
+        Z: 128
+    }
+    [RESTRICT INSTANCE 33]
+    {
+        X: 768
+        Y: 504
+        Z: 128
+    }
+    [RESTRICT INSTANCE 34]
+    {
+        X: 832
+        Y: 504
+        Z: 128
+    }
+    [RESTRICT INSTANCE 35]
+    {
+        X: 736
+        Y: 520
+        Z: 128
+    }
+    [RESTRICT INSTANCE 36]
+    {
+        X: 928
+        Y: 520
+        Z: 128
+    }
+    [RESTRICT INSTANCE 37]
+    {
+        X: 704
+        Y: 536
+        Z: 128
+    }
+    [RESTRICT INSTANCE 38]
+    {
+        X: 896
+        Y: 536
+        Z: 128
+    }
+    [RESTRICT INSTANCE 39]
+    {
+        X: 704
+        Y: 568
+        Z: 128
+    }
+    [RESTRICT INSTANCE 40]
+    {
+        X: 896
+        Y: 568
+        Z: 128
+    }
+    [RESTRICT INSTANCE 41]
+    {
+        X: 960
+        Y: 568
+        Z: 128
+    }
+    [RESTRICT INSTANCE 42]
+    {
+        X: 672
+        Y: 584
+        Z: 128
+    }
+    [RESTRICT INSTANCE 43]
+    {
+        X: 992
+        Y: 584
+        Z: 128
+    }
+    [RESTRICT INSTANCE 44]
+    {
+        X: 640
+        Y: 600
+        Z: 128
+    }
+    [RESTRICT INSTANCE 45]
+    {
+        X: 832
+        Y: 600
+        Z: 128
+    }
+    [RESTRICT INSTANCE 46]
+    {
+        X: 768
+        Y: 600
+        Z: 128
+    }
+    [RESTRICT INSTANCE 47]
+    {
+        X: 608
+        Y: 616
+        Z: 128
+    }
+    [RESTRICT INSTANCE 48]
+    {
+        X: 928
+        Y: 616
+        Z: 128
+    }
+    [RESTRICT INSTANCE 49]
+    {
+        X: 864
+        Y: 616
+        Z: 128
+    }
+    [RESTRICT INSTANCE 50]
+    {
+        X: 736
+        Y: 616
+        Z: 128
+    }
+    [RESTRICT INSTANCE 51]
+    {
+        X: 576
+        Y: 632
+        Z: 128
+    }
+    [RESTRICT INSTANCE 52]
+    {
+        X: 704
+        Y: 632
+        Z: 128
+    }
+    [RESTRICT INSTANCE 53]
+    {
+        X: 672
+        Y: 648
+        Z: 128
+    }
+    [RESTRICT INSTANCE 54]
+    {
+        X: 640
+        Y: 664
+        Z: 128
+    }
+    [RESTRICT INSTANCE 55]
+    {
+        X: 576
+        Y: 664
+        Z: 128
+    }
+}
+[BATTLE DATA]
+{
+    DESCRIPTION: HOLDS DATA FOR VIRUS BATTLES IN THIS MAP
+    NUMBER OF POSSIBLE BATTLES: 8
+}
+[TRIGGER POINTS]
+{
+    DESCRIPTION: TRIGGERS VARIOUS GML CODE WHEN TOUCHED
+    COUNT: 0
+}
+[RAMP POINTS]
+{
+    DESCRIPTION: CREATES RAMPS THAT ALLOW A USER TO INCREASE IN Z AXIS
+    COUNT: 2
+    [RAMP INSTANCE 1]
+    {
+        X     : 1024
+        Y     : 568
+        Z     : 0
+        Z2    : 128
+        DIR   : 1
+        LENGTH: 0.50
+    }
+    [RAMP INSTANCE 2]
+    {
+        X     : 1024
+        Y     : 664
+        Z     : 0
+        Z2    : 128
+        DIR   : 1
+        LENGTH: 0.50
+    }
+}
+[JACKER POINTS]
+{
+    DESCRIPTION: PLACES YOUR OPERATOR CAN JACK INTO (Real World only)
+    COUNT: 0
+}
+[MAP SETTINGS]
+{
+    BACKGROUND TYPE  : 0
+    BACKGROUND TEXID : 0
+    BACKGROUND SPEED : 0
+    BACKGROUND XSPEED: 0
+    BACKGROUND YSPEED: 0
+    BACKGROUND RED   : 0
+    BACKGROUND GREEN : 0
+    BACKGROUND BLUE  : 0

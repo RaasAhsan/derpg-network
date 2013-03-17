@@ -1,0 +1,165 @@
+//DERPG VX MAP DEBUG FILE
+Version: 2
+Decoration Count: 18
+
+---
+Decoration Instance 1
+---
+X           : 445
+Y           : 290
+Z           : 0
+DepthZ      : 0
+SpriteNumber: 2
+
+---
+Decoration Instance 2
+---
+X           : 832
+Y           : 456
+Z           : 0
+DepthZ      : 0
+SpriteNumber: 13
+
+---
+Decoration Instance 3
+---
+X           : 800
+Y           : 520
+Z           : 0
+DepthZ      : 0
+SpriteNumber: 15
+
+---
+Decoration Instance 4
+---
+X           : 1344
+Y           : 432
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 11
+
+---
+Decoration Instance 5
+---
+X           : 1213
+Y           : 435
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 12
+
+---
+Decoration Instance 6
+---
+X           : 896
+Y           : 440
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 7
+---
+X           : 928
+Y           : 456
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 8
+---
+X           : 960
+Y           : 472
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 9
+---
+X           : 1116
+Y           : 484
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 12
+
+---
+Decoration Instance 10
+---
+X           : 992
+Y           : 488
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 11
+---
+X           : 1024
+Y           : 504
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 12
+---
+X           : 1056
+Y           : 520
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 13
+---
+X           : 1088
+Y           : 536
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 14
+---
+X           : 1120
+Y           : 552
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 15
+---
+X           : 1088
+Y           : 568
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 16
+---
+X           : 1056
+Y           : 584
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 17
+---
+X           : 1024
+Y           : 600
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
+
+---
+Decoration Instance 18
+---
+X           : 992
+Y           : 616
+Z           : 128
+DepthZ      : 0
+SpriteNumber: 14
