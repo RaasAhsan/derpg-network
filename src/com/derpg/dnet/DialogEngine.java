@@ -19,7 +19,7 @@ public class DialogEngine {
 	int line = 0;
 	
 	private Sprite dialogbox, font, arrow;
-	private Sprite speaker;
+	private Mugshot mugshot;
 	
 	public DialogEngine(Input input) {
 		this.input = input;
@@ -32,38 +32,26 @@ public class DialogEngine {
 		arrow = new Sprite(11, 13, "gfx/dialogengine_arrow.png");
 		arrow.setAnimation(0, 3, 4);
 		
-		speaker = new Sprite(40, 48, "gfx/mugshot_megaman.png");
-		speaker.setAnimation(0,2,5);
+		mugshot = Mugshot.getMugshotOf(0);
+		mugshot.setTalking();
 	}
 	
 	public void update() {
 		if(running) {
-			speaker.update();
-			arrow.update();
 			if(!waiting) {
 				counter++;
 				if(counter >= speed) {
 					counter = 0;
-					if(position < buffer.length()-1) {
-						position++;
-					}
-					if(buffer.charAt(position) == '#') {
-						if(line == 2) {
-							waiting = true;
-							speaker.setAnimation(0,0,0);
-						} else {
-							line++;
-						}
-						position++; // position increase 
-					} else if(buffer.charAt(position) == '{') {
+					
+					while(buffer.charAt(position) == '{') {
 						int i = buffer.indexOf('}', position);
 						String command = buffer.substring(position + 1, i);
 						
 						if(command.equals("NB")) {
 							waiting = true;
-							speaker.setAnimation(0,0,0);
+							mugshot.setSilent();
 							buffer = buffer.replaceFirst("\\{NB\\}", "");
-							position --;
+							position -=2;
 						} else if(command.equals("NBC")) {
 							line = 0;
 							buffer = buffer.substring(i+1);
@@ -71,11 +59,27 @@ public class DialogEngine {
 						} else if(command.startsWith("NS")) {
 							int speaker = Integer.valueOf(command.substring(2));
 							buffer = buffer.replaceFirst("\\{NS[0-9][0-9][0-9]\\}", "");
+							mugshot = Mugshot.getMugshotOf(speaker);
 						}
 					}
+					
+					if(buffer.charAt(position) == '#') {
+						if(line == 2) {
+							waiting = true;
+							mugshot.setSilent();
+						} else {
+							line++;
+						}
+						position++; // position increase 
+					}
+					
+					if(position < buffer.length()-1) {
+						position++;
+					}
+					
 					if(position == buffer.length() - 1) {
 						waiting = true;
-						speaker.setAnimation(0,0,0);
+						mugshot.setSilent();
 					}
 				}
 			} else {
@@ -86,33 +90,42 @@ public class DialogEngine {
 						running = false;
 					} else {
 						waiting = false;
-						speaker.setAnimation(0,2,5);
+						mugshot.setTalking();
 						buffer = buffer.substring(position+1);
 						line = 0;
 						position = 0;
 					}
 				}
 			}
+			mugshot.update();
+			arrow.update();
 		}
 	}
 	
 	public void render(Renderer renderer) {
 		if(running) {
 			renderer.drawSprite(dialogbox, new Vector3D(9, 130), false);
-			renderer.drawSprite(speaker, new Vector3D(13, 138), false);
+			mugshot.render(renderer);
 		
 			int dx = 64;
 			int dy = 141;
+			int nstart = 0;
 			for(int i = 0; i <= position; i++) {
 				char c = buffer.charAt(i);
 				if(c == '#') {
 					dx = 64;
 					dy += 15;
+				} else if(c == '{') { 
+					nstart = 1;
+				} else if(c == '}') { 
+					nstart = 0;
 				} else {
-					font.setAnimation(c - 32, c - 32, 0);
-					font.update();
-					renderer.drawSprite(font, new Vector3D(dx, dy), false);
-					dx += 8;
+					if(nstart == 0) {
+						font.setAnimation(c - 32, c - 32, 0);
+						font.update();
+						renderer.drawSprite(font, new Vector3D(dx, dy), false);
+						dx += 8;
+					}
 				}
 			}
 			
@@ -127,7 +140,7 @@ public class DialogEngine {
 	}
 
 	public void say(String say) {
-		speaker.setAnimation(0,2,5);
+		mugshot.setTalking();
 		buffer = say;
 		running = true;
 		position = 0;

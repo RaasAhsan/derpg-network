@@ -73,7 +73,7 @@ public class EventRunner {
 	public void runEvent(EventObject event) {
 		//List<Command> evcom = event.getCommands();
 		
-		commands.add(new Command(Command.COMMAND_SAY, new String[] { "Will you help me?#Alright, thanks." }));
+		commands.add(new Command(Command.COMMAND_SAY, new String[] { "Will you help me?#I need some Zennys.{NB}{NS002}Sure.{NB}{NS000}Alright, thanks." }));
 		commands.add(new Command(Command.COMMAND_GIVE, new String[] { "" }));
 		commands.add(new Command(Command.VARIABLE_QUEST, new String[] { "0", "next" }));
 		command = commands.get(current);
