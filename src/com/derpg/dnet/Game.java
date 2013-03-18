@@ -1,5 +1,6 @@
 package com.derpg.dnet;
 
+import java.awt.Canvas;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -22,11 +23,12 @@ import com.derpg.dnet.math.Vector3D;
 import com.derpg.dnet.network.Protocol;
 import com.derpg.dnet.readers.DKMReader;
 import com.derpg.dnet.readers.TextureReader;
+import com.derpg.net.dialogengine.DialogEngine;
 import com.jxware.client.Client;
 import com.jxware.client.Packet;
 
 @SuppressWarnings("serial")
-public class Game extends JPanel implements Runnable {
+public class Game extends Canvas implements Runnable {
 	
 	private Thread thread;
 	
@@ -93,7 +95,7 @@ public class Game extends JPanel implements Runnable {
 		
 		try {
 			URLClassLoader classLoader = URLClassLoader
-					.newInstance(new URL[] { new URL("file:./src/mapevents/centralarea1.jar") });
+					.newInstance(new URL[] { new URL("file:./mapevents/centralarea1.jar") });
 		    
 		    Class<?> clazz = classLoader.loadClass("com.derpg.dnet.mapevents.CentralArea1");
 		    NPCMapObject nmap = (NPCMapObject) clazz.newInstance();

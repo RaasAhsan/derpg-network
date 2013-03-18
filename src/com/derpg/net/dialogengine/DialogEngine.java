@@ -1,5 +1,6 @@
-package com.derpg.dnet;
+package com.derpg.net.dialogengine;
 
+import com.derpg.dnet.Input;
 import com.derpg.dnet.gfx.Renderer;
 import com.derpg.dnet.gfx.Sprite;
 import com.derpg.dnet.math.Vector3D;
@@ -43,26 +44,7 @@ public class DialogEngine {
 				if(counter >= speed) {
 					counter = 0;
 					
-					while(buffer.charAt(position) == '{') {
-						int i = buffer.indexOf('}', position);
-						String command = buffer.substring(position + 1, i);
-						
-						if(command.equals("NB")) {
-							waiting = true;
-							mugshot.setSilent();
-							buffer = buffer.replaceFirst("\\{NB\\}", "");
-							position -=2;
-						} else if(command.equals("NBC")) {
-							line = 0;
-							buffer = buffer.substring(i+1);
-							position = 0;
-						} else if(command.startsWith("NS")) {
-							int speaker = Integer.valueOf(command.substring(2));
-							buffer = buffer.replaceFirst("\\{NS[0-9][0-9][0-9]\\}", "");
-							mugshot = Mugshot.getMugshotOf(speaker);
-							mugshot.setTalking();
-						}
-					}
+					
 					
 					if(buffer.charAt(position) == '#') {
 						if(line == 2) {
@@ -107,6 +89,27 @@ public class DialogEngine {
 		if(running) {
 			renderer.drawSprite(dialogbox, new Vector3D(9, 130), false);
 			mugshot.render(renderer);
+			
+			while(buffer.charAt(position) == '{') {
+				int i = buffer.indexOf('}', position);
+				String command = buffer.substring(position + 1, i);
+				
+				if(command.equals("NB")) {
+					waiting = true;
+					mugshot.setSilent();
+					buffer = buffer.replaceFirst("\\{NB\\}", "");
+					position --;
+				} else if(command.equals("NBC")) {
+					line = 0;
+					buffer = buffer.substring(i+1);
+					position = 0;
+				} else if(command.startsWith("NS")) {
+					int speaker = Integer.valueOf(command.substring(2));
+					buffer = buffer.replaceFirst("\\{NS[0-9][0-9][0-9]\\}", "");
+					mugshot = Mugshot.getMugshotOf(speaker);
+					mugshot.setTalking();
+				}
+			}
 		
 			int dx = 64;
 			int dy = 141;

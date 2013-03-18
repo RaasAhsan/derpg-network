@@ -3,8 +3,8 @@ package com.derpg.dnet.event;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.derpg.dnet.DialogEngine;
 import com.derpg.dnet.Game;
+import com.derpg.net.dialogengine.DialogEngine;
 
 // this class handles everything
 public class EventRunner {

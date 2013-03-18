@@ -12,6 +12,14 @@ public abstract class OverworldEntity extends Entity {
 	public static final int UP_LEFT = 5;
 	public static final int UP = 6;
 	public static final int UP_RIGHT = 7;
+	
+	public static final int MEGAMAN = 0;
+	public static final int NORMALNAVI = 1;
+	public static final int HEELNAVI = 2;
+	public static final int DROKOKIEO = 3;
+	public static final int OFFICER = 4;
+	public static final int MRPROG = 5;
+	public static final int BN4GUYNAVI = 6;
 
 	protected int direction;
 	int sides;

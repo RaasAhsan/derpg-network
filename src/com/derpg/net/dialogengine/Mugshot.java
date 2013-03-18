@@ -1,15 +1,12 @@
-package com.derpg.dnet;
+package com.derpg.net.dialogengine;
 
 import com.derpg.dnet.gfx.Renderer;
 import com.derpg.dnet.gfx.Sprite;
 import com.derpg.dnet.math.Vector3D;
 
+import com.derpg.dnet.entity.OverworldEntity;
+
 public class Mugshot {
-	
-	public static final int MEGAMAN = 0;
-	public static final int NORMAL_NAVI = 1;
-	public static final int HEEL_NAVI = 2;
-	public static final int DROKOKIEO = 3;
 
 	private int mugid;
 	private Sprite mugshot;
@@ -19,18 +16,24 @@ public class Mugshot {
 	private Mugshot(int mugid) {
 		this.mugid = mugid;
 		
-		if(mugid == MEGAMAN) {
+		if(mugid == OverworldEntity.MEGAMAN) {
 			frames = 3;
 			mugshot = new Sprite(40, 48, "gfx/mugshot_megaman.png");
-		} else if(mugid == NORMAL_NAVI) {
+		} else if(mugid == OverworldEntity.NORMALNAVI) {
 			frames = 1;
 			mugshot = new Sprite(40, 48, "gfx/mugshot_normalnavi.png");
-		} else if(mugid == HEEL_NAVI) {
+		} else if(mugid == OverworldEntity.HEELNAVI) {
 			frames = 1;
 			mugshot = new Sprite(40, 48, "gfx/mugshot_heelnavi.png");
-		} else if(mugid == DROKOKIEO) {
+		} else if(mugid == OverworldEntity.DROKOKIEO) {
 			frames = 3;
 			mugshot = new Sprite(40, 48, "gfx/mugshot_idesty.png");
+		} else if(mugid == OverworldEntity.MRPROG) {
+			frames = 3;
+			mugshot = new Sprite(40, 48, "gfx/mugshot_mrprog.png");
+		} else if(mugid == OverworldEntity.BN4GUYNAVI) {
+			frames = 1;
+			mugshot = new Sprite(40, 48, "gfx/mugshot_bn4guy.png");
 		}
 	}
 	

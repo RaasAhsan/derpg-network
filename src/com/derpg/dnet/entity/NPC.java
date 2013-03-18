@@ -1,15 +1,11 @@
 package com.derpg.dnet.entity;
 
-import com.derpg.dnet.event.EventRunner;
 import com.derpg.dnet.gfx.Renderer;
 import com.derpg.dnet.gfx.Sprite;
 import com.derpg.dnet.math.Circle;
 import com.derpg.dnet.math.Vector3D;
 
 public class NPC extends OverworldEntity {
-	
-	public static final int NORMALNAVI = 0;
-	public static final int HEELNAVI = 1;
 	
 	int npctype;
 
@@ -24,6 +20,10 @@ public class NPC extends OverworldEntity {
 			this.sprite = new Sprite(64, 64, "gfx/navi_normalnavi.png");
 		else if(npctype == HEELNAVI)
 			this.sprite = new Sprite(64, 64, "gfx/navi_heelnavi.png");
+		else if(npctype == OFFICER)
+			this.sprite = new Sprite(64, 64, "gfx/navi_officer.png");
+		else if(npctype == BN4GUYNAVI)
+			this.sprite = new Sprite(64, 64, "gfx/navi_bn4guy.png");
 		
 		sprite.setAnimation(0, 0, 0);
 	}

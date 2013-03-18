@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.util.List;
 
 import com.derpg.dnet.DKM;
-import com.derpg.dnet.DialogEngine;
 import com.derpg.dnet.Input;
 import com.derpg.dnet.event.EventRunner;
 import com.derpg.dnet.gfx.Renderer;
@@ -14,6 +13,7 @@ import com.derpg.dnet.math.Circle;
 import com.derpg.dnet.math.Collisions;
 import com.derpg.dnet.math.Triangle;
 import com.derpg.dnet.math.Vector3D;
+import com.derpg.net.dialogengine.DialogEngine;
 
 public class Player extends OverworldEntity {
 	
