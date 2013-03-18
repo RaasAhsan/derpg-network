@@ -11,7 +11,7 @@ public class DialogEngine {
 	private String buffer;
 	private int position;
 	private boolean running;
-	private int speed = 5;
+	private int speed = 4;
 	
 	private boolean waiting = false;
 	
@@ -60,6 +60,7 @@ public class DialogEngine {
 							int speaker = Integer.valueOf(command.substring(2));
 							buffer = buffer.replaceFirst("\\{NS[0-9][0-9][0-9]\\}", "");
 							mugshot = Mugshot.getMugshotOf(speaker);
+							mugshot.setTalking();
 						}
 					}
 					

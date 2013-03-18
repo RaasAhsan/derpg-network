@@ -70,12 +70,8 @@ public class EventRunner {
 		}
 	}
 
-	public void runEvent(EventObject event) {
-		//List<Command> evcom = event.getCommands();
-		
-		commands.add(new Command(Command.COMMAND_SAY, new String[] { "Will you help me?#I need some Zennys.{NB}{NS002}Sure.{NB}{NS000}Alright, thanks." }));
-		commands.add(new Command(Command.COMMAND_GIVE, new String[] { "" }));
-		commands.add(new Command(Command.VARIABLE_QUEST, new String[] { "0", "next" }));
+	public void runEvent(List<Command> event) {
+		commands.addAll(event);
 		command = commands.get(current);
 	}
 	
@@ -87,10 +83,6 @@ public class EventRunner {
 	
 	public static void init(Game game) {
 		eventRunner = new EventRunner(game);
-	}
-	
-	public static void run(EventObject event) {
-		eventRunner.runEvent(event);
 	}
 
 	public static void updateRunner() {

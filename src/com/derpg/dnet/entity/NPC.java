@@ -1,6 +1,5 @@
 package com.derpg.dnet.entity;
 
-import com.derpg.dnet.event.EventObject;
 import com.derpg.dnet.event.EventRunner;
 import com.derpg.dnet.gfx.Renderer;
 import com.derpg.dnet.gfx.Sprite;
@@ -9,16 +8,24 @@ import com.derpg.dnet.math.Vector3D;
 
 public class NPC extends OverworldEntity {
 	
-	private EventObject event;
+	public static final int NORMALNAVI = 0;
+	public static final int HEELNAVI = 1;
+	
+	int npctype;
 
-	public NPC(Vector3D pos, EventObject event) {
-		super(-1, pos);
-		this.event = event;
+	public NPC(int npcid, int npctype, Vector3D pos) {
+		super(npcid, pos);
 		
 		this.mask = new Circle(pos, 4);
 		
-		this.sprite = new Sprite(64, 64, "gfx/navi_normalnavi.png");
-		sprite.setAnimation(1, 1, 0);
+		this.npctype = npctype;
+		
+		if(npctype == NORMALNAVI)
+			this.sprite = new Sprite(64, 64, "gfx/navi_normalnavi.png");
+		else if(npctype == HEELNAVI)
+			this.sprite = new Sprite(64, 64, "gfx/navi_heelnavi.png");
+		
+		sprite.setAnimation(0, 0, 0);
 	}
 
 	@Override
@@ -37,7 +44,6 @@ public class NPC extends OverworldEntity {
 	public void interact(Entity starter) {
 		this.direction = OverworldEntity.getDirectionTo(this, starter, 4);
 		this.sprite.setAnimation(direction, direction, 0);
-		EventRunner.run(null);
 	}
 
 }

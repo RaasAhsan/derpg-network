@@ -127,6 +127,7 @@ public class Player extends OverworldEntity {
 						if(oe instanceof NPC) {
 							if(Collisions.collides(oe.getMask(), c)) {
 								((NPC)oe).interact(this);
+								dkm.nmap.interact((int)((NPC)oe).getID());
 								sprite.setAnimation(direction,direction,0);
 							}
 						}

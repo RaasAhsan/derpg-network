@@ -9,6 +9,7 @@ public class Mugshot {
 	public static final int MEGAMAN = 0;
 	public static final int NORMAL_NAVI = 1;
 	public static final int HEEL_NAVI = 2;
+	public static final int DROKOKIEO = 3;
 
 	private int mugid;
 	private Sprite mugshot;
@@ -27,6 +28,9 @@ public class Mugshot {
 		} else if(mugid == HEEL_NAVI) {
 			frames = 1;
 			mugshot = new Sprite(40, 48, "gfx/mugshot_heelnavi.png");
+		} else if(mugid == DROKOKIEO) {
+			frames = 3;
+			mugshot = new Sprite(40, 48, "gfx/mugshot_idesty.png");
 		}
 	}
 	

@@ -89,42 +89,20 @@ public class External extends OverworldEntity {
 				interp_pos = new Vector3D(interp_pos.y, interp_pos.x);
 			}
 			
-			System.out.println("----------------");
+			/*System.out.println("----------------");
 			System.out.println("Position A: " + a.x + ", " + a.y);
 			System.out.println("Position B: " + b.x + ", " + b.y);
 			System.out.println("Interpolation value: " + interp);
 			System.out.println("Interpolated Position: " + interp_pos.x + ", " + interp_pos.y);
-			
+			*/
 			if(!sprite.isAnimation(8 + direction * 6, 8 + direction * 6 + 5, delay))
 				sprite.setAnimation(8 + direction * 6, 8 + direction * 6 + 5, delay);
 		} else {
 			interp_pos = b.copy();
 			sprite.setAnimation(direction, direction, 0);
 		}
-			
-		/*Vector3D dir = new Vector3D(position.x - last_pos.x, position.y - last_pos.y);
-		dir.normalize();
-		if(last_pos.x != position.x || last_pos.y != position.y) {
-			if(dir.x > 0)
-				i += m;
-			else if(dir.x < 0)
-				i -= m;
-			interp_pos = Interpolation.interpolate(i, last_pos, position);
-			
-			if(last_pos.x == position.x) {
-				if(dir.y > 0)
-					i += m;
-				else if(dir.y < 0)
-					i -= m;
-				Vector3D change = new Vector3D(last_pos.y, last_pos.x);
-				Vector3D cpos = new Vector3D(position.y, position.x);
-				
-				interp_pos = Interpolation.interpolate(i, change, cpos);
-				interp_pos = new Vector3D(interp_pos.y, interp_pos.x);
-			}
-		} else {
-			interp_pos = position.copy();
-		}*/
+		
+		this.position = interp_pos;
 	}
 
 	@Override

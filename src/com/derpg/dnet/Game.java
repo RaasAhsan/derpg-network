@@ -5,6 +5,8 @@ import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.URL;
+import java.net.URLClassLoader;
 
 import javax.swing.JPanel;
 
@@ -12,6 +14,7 @@ import com.derpg.dnet.entity.External;
 import com.derpg.dnet.entity.Player;
 import com.derpg.dnet.entity.NPC;
 import com.derpg.dnet.event.EventRunner;
+import com.derpg.dnet.event.NPCMapObject;
 import com.derpg.dnet.event.QuestController;
 import com.derpg.dnet.gfx.Fade;
 import com.derpg.dnet.gfx.Renderer;
@@ -87,10 +90,24 @@ public class Game extends JPanel implements Runnable {
 		DKMReader reader = new DKMReader();
 		dkmmap = reader.read("central1.dkm");
 		dkmmap.setPlayer(p);
+		
+		try {
+			URLClassLoader classLoader = URLClassLoader
+					.newInstance(new URL[] { new URL("file:./src/mapevents/centralarea1.jar") });
+		    
+		    Class<?> clazz = classLoader.loadClass("com.derpg.dnet.mapevents.CentralArea1");
+		    NPCMapObject nmap = (NPCMapObject) clazz.newInstance();
+		    dkmmap.nmap = nmap;
+		    
+		   nmap.init(dkmmap, EventRunner.eventRunner, this.controller);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		
 		p.setPosition(dkmmap.begin);
 		p.setMap(dkmmap);
 		
-		dkmmap.spawn(new NPC(new Vector3D(544+32, 616), null));
+		//dkmmap.spawn(new NPC(new Vector3D(544+32, 616), null));
 		
 		currentfade = null;
 		

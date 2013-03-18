@@ -12,6 +12,7 @@ import com.derpg.dnet.entity.Decoration;
 import com.derpg.dnet.entity.External;
 import com.derpg.dnet.entity.Player;
 import com.derpg.dnet.entity.OverworldEntity;
+import com.derpg.dnet.event.NPCMapObject;
 import com.derpg.dnet.gfx.BackgroundRenderer;
 import com.derpg.dnet.gfx.Renderer;
 import com.derpg.dnet.map.EndPoint;
@@ -48,6 +49,8 @@ public class DKM {
 	private ArrayList<OverworldEntity> entities;
 	
 	private BackgroundRenderer bgrenderer;
+	
+	public NPCMapObject nmap;
 	
 	public DKM() {
 		this.decorations = new ArrayList<Decoration>();
