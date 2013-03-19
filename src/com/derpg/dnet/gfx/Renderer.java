@@ -37,5 +37,13 @@ public class Renderer {
 	public void fillRect(Rectangle rect) {
 		gfx.fillRect((int) rect.getX(), (int) rect.getY(), (int) rect.getWidth(), (int) rect.getHeight());
 	}
+
+	public void drawText(String string, Vector3D pos, boolean b) {
+		if(b) {
+			gfx.drawString(string, pos.getX() - (int)view.getView().x, pos.getY() - (int)view.getView().y);
+		} else {
+			gfx.drawString(string, pos.getX(), pos.getY());
+		}
+	}
 	
 }

@@ -9,7 +9,7 @@ public class NPC extends OverworldEntity {
 	
 	int npctype;
 
-	public NPC(int npcid, int npctype, Vector3D pos) {
+	public NPC(int npcid, int npctype, int dir, Vector3D pos) {
 		super(npcid, pos);
 		
 		this.mask = new Circle(pos, 4);
@@ -25,7 +25,8 @@ public class NPC extends OverworldEntity {
 		else if(npctype == BN4GUYNAVI)
 			this.sprite = new Sprite(64, 64, "gfx/navi_bn4guy.png");
 		
-		sprite.setAnimation(0, 0, 0);
+		System.out.println(npctype);
+		sprite.setAnimation(dir, dir, 0);
 	}
 
 	@Override
@@ -38,6 +39,7 @@ public class NPC extends OverworldEntity {
 	@Override
 	public void render(Renderer renderer) {
 		renderer.drawSprite(sprite, new Vector3D(position.x - 32, position.y - 47), true);
+		renderer.drawText("" + id, new Vector3D(position.x, position.y), true);
 	}
 	
 	@Override

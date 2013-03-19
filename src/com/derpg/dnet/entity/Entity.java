@@ -7,7 +7,7 @@ import com.derpg.dnet.math.Vector3D;
 
 public abstract class Entity {
 
-	private long id;
+	protected long id;
 	protected Vector3D position;
 	protected Sprite sprite;
 	protected Mask mask;

@@ -18,6 +18,10 @@ public class Quest {
 		return complete;
 	}
 	
+	public void setComplete() {
+		complete = true;
+	}
+	
 	public int getPosition() {
 		return position;
 	}
